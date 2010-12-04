@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    Add XPath support to HTML::TreeBuilder
 License:    GPL+ or Artistic
@@ -14,6 +14,13 @@ Source0:    http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstre
 BuildRequires: perl(HTML::TreeBuilder)
 BuildRequires: perl(List::Util)
 BuildRequires: perl(XML::XPathEngine)
+# Some of these requirements were missing so we added them explicitly.
+Requires: perl(List::Util)
+Requires: perl(HTML::TreeBuilder)
+Requires: perl(HTML::TreeBuilder::XPath::Node)
+Requires: perl(Scalar::Util)
+Requires: perl(XML::XPathEngine)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
