@@ -1,2 +1,4 @@
+removed_sources:
+  HTML-TreeBuilder-XPath-0.12.tar.xz: 2ebe0076c1d4ce4691a1ac35a6bdbbe0242d91ee
 sources:
-  "HTML-TreeBuilder-XPath-0.12.tar.xz": 2ebe0076c1d4ce4691a1ac35a6bdbbe0242d91ee
+  HTML-TreeBuilder-XPath-0.14.tar.gz: 5fd840b1d337a96a33c76d1789ba1b749fa2210c
