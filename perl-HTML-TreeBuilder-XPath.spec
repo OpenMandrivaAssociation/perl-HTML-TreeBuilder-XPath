@@ -1,15 +1,15 @@
 %define upstream_name    HTML-TreeBuilder-XPath
-%define upstream_version 0.12
+%define upstream_version 0.14
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%perl_convert_version 0.14
+Release:	1
 
 Summary:	Add XPath support to HTML::TreeBuilder
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.xz
+Source0:	http://www.cpan.org/modules/by-module/HTML/HTML-TreeBuilder-XPath-0.14.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(HTML::TreeBuilder)
@@ -58,4 +58,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Fri Dec 03 2010 Shlomi Fish <shlomif@mandriva.org> 0.120.0-1mdv2011.0
 + Revision: 607286
 - import perl-HTML-TreeBuilder-XPath
+
 
