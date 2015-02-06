@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.14
-Release:	2
+Release:	3
 
 Summary:	Add XPath support to HTML::TreeBuilder
 License:	GPL+ or Artistic
