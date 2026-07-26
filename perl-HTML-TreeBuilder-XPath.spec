@@ -1,14 +1,12 @@
 %define upstream_name    HTML-TreeBuilder-XPath
-%define upstream_version 0.14
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.14
-Release:	3
+Version:	0.14
+Release:	4
 
 Summary:	Add XPath support to HTML::TreeBuilder
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
+Url:		https://metacpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/HTML/HTML-TreeBuilder-XPath-0.14.tar.gz
 
 BuildRequires:	make
@@ -30,7 +28,7 @@ This module adds typical XPath methods to HTML::TreeBuilder, to make it
 easy to query a document.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
